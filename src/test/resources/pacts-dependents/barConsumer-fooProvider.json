@@ -1,0 +1,25 @@
+{
+  "provider" : {
+    "name" : "Foo Provider Service"
+  },
+  "consumer" : {
+    "name" : "Bar Consumer Service"
+  },
+  "interactions" : [ {
+    "provider_state" : "bar is 5",
+    "description" : "retrieves value of bar",
+    "request" : {
+      "method" : "get",
+      "path" : "/bar",
+      "requestMatchers" : { }
+    },
+    "response" : {
+      "status" : 200,
+      "headers" : {
+        "Content-Type" : "text/plain; charset=utf-8"
+      },
+      "body" : "5",
+      "responseMatchers" : { }
+    }
+  } ]
+}
